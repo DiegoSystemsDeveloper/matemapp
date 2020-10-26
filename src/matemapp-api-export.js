@@ -175,6 +175,61 @@ export  default  [{
       },
       "valor": "7 + 9"
     }
+  },"fracciones": {
+    "pregunta1": {
+      "correcta": "2/2",
+      "opciones": {
+        "opcion1": "2/2",
+        "opcion2": "5/7",
+        "opcion3": "8/4"
+      },
+      "valor": "¿Qué fracción equivale a la unidad?"
+    },
+    "pregunta2": {
+      "correcta": "6/2",
+      "opciones": {
+        "opcion1": "8/8",
+        "opcion2": "6/2",
+        "opcion3": "7/8"
+      },
+      "valor": "¿Qué fracción es mayor que la unidad?"
+    },
+    "pregunta3": {
+      "correcta": "5/8 < 8/8 < 9/8",
+      "opciones": {
+        "opcion1": "2/3 < 3/4 < 8/9",
+        "opcion2": "5/8 < 8/8 < 9/8",
+        "opcion3": "2/2 < 3/8 < 5/7"
+      },
+      "valor": "¿Qué grupo de fracciones están ordenadas de mayor a menor?"
+    },
+    "pregunta4": {
+      "correcta": "7/7",
+      "opciones": {
+        "opcion1": "7/8",
+        "opcion2": "4/7",
+        "opcion3": "7/7"
+      },
+      "valor": "2/7 + 5/7"
+    },
+    "pregunta5": {
+      "correcta": "14/6",
+      "opciones": {
+        "opcion1": "8/3",
+        "opcion2": "2/7",
+        "opcion3": "14/6"
+      },
+      "valor": "7/2 x 2/3"
+    },
+    "pregunta6": {
+      "correcta": 16,
+      "opciones": {
+        "opcion1": 17,
+        "opcion2": 16,
+        "opcion3": 18
+      },
+      "valor": "7 + 9"
+    }
   }
 }
 ]

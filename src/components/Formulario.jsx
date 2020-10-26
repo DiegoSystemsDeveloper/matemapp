@@ -31,7 +31,7 @@ const Formulario = ({ guardarUsuario }) => {
   };
 
   return (
-    <div>
+    <div className="p-4">
       <header>
         <h1>Bienvenido a MatemApp</h1>
       </header>
@@ -52,17 +52,6 @@ const Formulario = ({ guardarUsuario }) => {
           />
         </form>
       </div>
-      <footer>
-        <div style={{display: ""}}>
-          <img
-            role="presentation"
-            alt="decorar"
-            className="img-fluid"
-            src="//www.gstatic.com/mobilesdk/200303_mobilesdk/ML_fore@2x.png"
-            style={{position: "fixed"}}
-          ></img>
-        </div>
-      </footer>
     </div>
   );
 };

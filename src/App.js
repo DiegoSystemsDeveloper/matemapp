@@ -23,9 +23,11 @@ function App() {
   const [puntajeSumas, setPuntajeSumas] = useState(0)
   const [puntajeRestas, setPuntajeRestas] = useState(0)
   const [puntajeMultiplicaciones, setPuntajeMultiplicaciones] = useState(0)
+  const [puntajeFracciones, setPuntajeFracciones] = useState(0)
   const sumas = api[0].sumas
   const multiplicaciones = api[0].multiplicaciones
   const restas = api[0].restas
+  const fracciones = api[0].fracciones
 
   let usuarioInicial = (window.sessionStorage.getItem('usuario'));
   if (usuarioInicial == null) {
@@ -62,6 +64,14 @@ function App() {
     multiplicaciones.pregunta5
   ];
 
+  const arregloFracciones = [
+    fracciones.pregunta1,
+    fracciones.pregunta2,
+    fracciones.pregunta3,
+    fracciones.pregunta4,
+    fracciones.pregunta5
+  ];
+  
   return (
     <Router>
       <div className="container">
@@ -110,6 +120,18 @@ function App() {
               pregunta={arregloMultiplicaciones[index] === undefined ? null : arregloMultiplicaciones[index].valor}
               setPuntaje={setPuntajeMultiplicaciones}
               puntaje={puntajeMultiplicaciones}
+            />
+          </Route>
+          <Route path="/fracciones">
+            <Pregunta
+              usuario={usuario}
+              title="Operaciones con Fracciones"
+              actividad={fracciones}
+              index={index}
+              setIndex={setIndex}
+              pregunta={arregloFracciones[index] === undefined ? null : arregloFracciones[index].valor}
+              setPuntaje={setPuntajeFracciones}
+              puntaje={puntajeFracciones}
             />
           </Route>
         </Switch>

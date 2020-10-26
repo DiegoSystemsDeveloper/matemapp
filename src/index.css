@@ -1,34 +1,38 @@
-.center{
+.center {
   align-items: center;
   justify-content: center;
 }
 
-.actividad p{
-  font-size: 12;
-  color: rgb(207, 232, 252);
-  margin:auto;
+.card {
+  border-radius: 5px;
+  background-color: #29b6f6;
+} 
+
+.tarjeta {
+  position: relative;
 }
 
-.m-l-r {
-  margin-left: 25%;
-  margin-right: 25%;
+.imagen {
+  height: 100px;
+  width: 150px;
+  position: absolute;
+  float: right; 
+  z-index: 1;
+  border-color: black;
+  border-radius: 1px;
+  left: 150px;
+  top: -75px;
 }
 
-body {
-  background: hsl(180, 4%, 14%);
-  color: aliceblue;
-}
+.imagen:hover {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+ }
 
-header {
-  margin: 30px 0;
-}
-
-h1{
+h1 {
   font-family: sans-serif;
-}
-
-.contenido {
-  padding:20px;
 }
 
 .contenido-principal {
@@ -42,54 +46,30 @@ h1{
   font-weight: bolder;
 }
 
-.opcion{
+.opcion {
   font-size: 30px;
 }
 
-.clases{
+.clases {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
   align-items: stretch;
 }
 
-.actividad{
+.actividad {
   border: 1px solid #ffffff;
   border-radius: 7px;
-  background-color: #333;  
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  align-items: center;
+  background-color: #333;
 }
 
-.zoom {
-  -moz-transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s; 
-  border-radius: 2px;
-  max-width: 100%;
-  padding: 10px;  
-}
-
-.zoom:hover {
-  -moz-transforms: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-header{
+header {
   text-align: center;
 }
 
-form{
+form {
   padding-left: 15%;
   padding-right: 15%;
 }
 
-h2 {
-  color: rgb(207, 232, 252);;
-}
 

@@ -58,14 +58,19 @@ const Tipos = ({ usuario }) => {
               <h6>RESTAS</h6>
             </div>
             <div
-              className="col-sm-3 actividad btn btn-primary"
+              className="col-sm-3 actividad btn btn-primary align-items-center"
               onClick={() => {
                 history.push("/multiplicaciones");
               }}
             >
               <h6>MULTIPLICACIONES</h6>
             </div>
-            <div className="col-sm-3 actividad btn btn-primary">
+            <div
+              className="col-sm-3 actividad btn btn-primary align-items-center"
+              onClick={() => {
+                history.push("/fracciones")
+              }}
+            >
               <h6>OPERACIONES CON FRACCIONARIOS</h6>
             </div>
           </div>
