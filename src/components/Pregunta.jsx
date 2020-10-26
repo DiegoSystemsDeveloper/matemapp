@@ -17,7 +17,7 @@ const Pregunta = ({
   puntaje,
   setPuntaje,
 }) => {
-  const [respuesta, setRespuesta] = useState(null);
+  const [respuesta, setRespuesta] = useState("");
   let history = useHistory();
 
   const [open, setOpen] = React.useState(false);
@@ -59,9 +59,9 @@ const Pregunta = ({
       return;
     }
 
-    if (parseInt(respuesta, 10) === arreglo[index].correcta) {
+    if (respuesta == arreglo[index].correcta) {
       setPuntaje(puntaje + 1);
-    }
+    } 
 
     if (index === arreglo.length - 1) {
       setIndex(0);
@@ -119,8 +119,8 @@ const Pregunta = ({
           </DialogActions>
         </Dialog>
       </div>
-      <h1>{title}</h1>
-      <div className="row p-4">
+      <h1 className="mb-5">{title}</h1>
+      <div className="row mt-5">
         <div className="col-sm-4 offset-sm-4 tarjeta mt-4">
           <div className="card">
             <img

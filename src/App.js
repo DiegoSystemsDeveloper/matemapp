@@ -17,6 +17,7 @@ function App() {
     setPuntajeSumas(0);
     setPuntajeRestas(0);
     setPuntajeMultiplicaciones(0)
+    setPuntajeFracciones(0)
     }
 
   const [index, setIndex] = useState(0);
@@ -24,6 +25,7 @@ function App() {
   const [puntajeRestas, setPuntajeRestas] = useState(0)
   const [puntajeMultiplicaciones, setPuntajeMultiplicaciones] = useState(0)
   const [puntajeFracciones, setPuntajeFracciones] = useState(0)
+  
   const sumas = api[0].sumas
   const multiplicaciones = api[0].multiplicaciones
   const restas = api[0].restas
